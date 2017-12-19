@@ -1030,6 +1030,8 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 	nSubsidy = 50000000 * COIN;
     } else if (nHeight < 10000) {
 	nSubsidy = 100 * COIN;
+    } else if (nHeight == 33208) {
+	nSubsidy = 98400000 * COIN; // for distribute in Cambodia via ICO
     }
 
     // Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.
